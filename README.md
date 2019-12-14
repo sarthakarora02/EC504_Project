@@ -21,7 +21,9 @@ Image segmentation is a very common topic in computer vision in which an object 
 *module load python3/3.6.5*
 
 * python main.py ./birdy.jpg
+
 OR
+
 * python mainGMM.py ./plane.jpg
 
 ## **File descriptions**
