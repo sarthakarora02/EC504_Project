@@ -4,8 +4,6 @@ import numpy as np
 import argparse
 from sklearn.mixture import GaussianMixture as gmm
 import math
-from queue import Queue
-import math
 import datetime
 
 from edmondskarp import EdmondsKarp
@@ -197,6 +195,7 @@ if __name__ == "__main__":
     image, cuts = imageSegmentation(og_image, fore_pixels, back_pixels)
 
     cut_img = cv2.imread('./cut.jpg')
+
     # plt.figure()
     cv2.imshow('cut_image', cut_img)
     # plt.show()
@@ -210,6 +209,10 @@ if __name__ == "__main__":
 
     pts = np.array(pts, dtype='int32')
 
+    # imageprocessing(mask, og_image)
+    # mask = mask.astype('uint8')
+    # mask = cv2.resize(mask, (300,300), interpolation = cv2.INTER_AREA)
+    # cv2.imwrite('mask.jpg', mask)
     plt.figure()
     plt.imshow(mask, cmap='gray')
     plt.show()
@@ -226,3 +229,8 @@ if __name__ == "__main__":
     plt.figure()
     plt.imshow(fill*og_image.astype('int32'), cmap='gray')
     plt.show()
+
+    # print("SIZES CHECK: ",og_image.shape, mask.shape)
+    # bk = cv2.bitwise_and(og_image, mask)
+    # bk = 255+bk
+    # cv2.imwrite('segmented_image.jpg', bk)
