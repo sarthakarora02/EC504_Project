@@ -39,3 +39,7 @@ python mainGMM.py ./plane.jpeg
 *python 3.6.5*
 
 *opencv 3.4.2*
+
+## **References**
+
+* https://julie-jiang.github.io/image-segmentation/#algos
