@@ -14,16 +14,21 @@ Image segmentation is a very common topic in computer vision in which an object 
 
 # How to Run
 
-* SCC
+ - SCC
 
 *module load opencv/4.0.1*
+
 *module load python3/3.6.5*
 
 python main.py ./birdy.jpeg
 OR
 python mainGMM.py ./plane.jpeg
 
-### **Requirements**
+## **File descriptions**
+ - main.py runs max flow over graph with constant weights on terminal edges and boundary penalty weights on neighborhood edges
+ - mainGMM.py runs max flow over graph with log likelihood ratio of GMM predicted probabilities weights on terminal edges and boundary penalty weights on neighborhood edges
+
+## **Requirements**
 
 *numpy 1.15.2*
 
