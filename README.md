@@ -20,9 +20,9 @@ Image segmentation is a very common topic in computer vision in which an object 
 
 *module load python3/3.6.5*
 
-python main.py ./birdy.jpeg
+* python main.py ./birdy.jpg
 OR
-python mainGMM.py ./plane.jpeg
+* python mainGMM.py ./plane.jpg
 
 ## **File descriptions**
  - main.py runs max flow over graph with constant weights on terminal edges and boundary penalty weights on neighborhood edges
@@ -43,3 +43,4 @@ python mainGMM.py ./plane.jpeg
 ## **References**
 
 * https://julie-jiang.github.io/image-segmentation/#algos
+* Martin, David, et al. "A database of human segmented natural images and its application to evaluating segmentation algorithms and measuring ecological statistics." Vancouver:: Iccv, 2001.
